@@ -1,0 +1,10 @@
+# Read input from user
+deposited_amount = float(input())
+deposit_term = int(input())
+annual_interest_rate = float(input())
+
+# Calculate amount at the end of the deposit period
+amount = deposited_amount + deposit_term * ((deposited_amount * annual_interest_rate) / 1200)
+
+# Print result
+print("{:.2f}".format(amount))
