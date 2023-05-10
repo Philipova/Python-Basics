@@ -1,0 +1,13 @@
+# Read input from the console
+num_pages = int(input())
+pages_per_hour = int(input())
+num_days = int(input())
+
+# Calculate the total number of hours required to read the book
+total_hours = (num_pages / pages_per_hour)
+
+# Calculate how many hours per day Joro should spend reading
+hours_per_day = total_hours / num_days
+
+# Print the result
+print("{:.0f}".format(hours_per_day))
