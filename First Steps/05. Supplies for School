@@ -1,0 +1,22 @@
+# Reading the inputs
+num_chemicals = int(input("Enter the number of chemical packages: "))
+num_markers = int(input("Enter the number of marker packets: "))
+num_cleaners = int(input("Enter the number of liters of chalkboard cleaner: "))
+discount = int(input("Enter the discount percentage: "))
+
+# Calculating the cost of each item
+cost_chemicals = num_chemicals * 5.80
+cost_markers = num_markers * 7.20
+cost_cleaners = num_cleaners * 1.20
+
+# Calculating the total cost before discount
+total_cost = cost_chemicals + cost_markers + cost_cleaners
+
+# Calculating the discount amount
+discount_amount = total_cost * (discount / 100)
+
+# Calculating the total cost after discount
+final_cost = total_cost - discount_amount
+
+# Printing the final cost
+print("Annie needs to pay: BGN {:.2f}".format(final_cost))
