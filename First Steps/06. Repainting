@@ -1,0 +1,22 @@
+# read the inputs
+nylon = int(input())
+paint = int(input())
+thinner = int(input())
+hours = int(input())
+
+# calculate the cost of materials
+nylon_cost = (nylon + 2) * 1.5 # adding 2 sq.m. and 0.40 BGN for bags
+paint_cost = paint * 1.1 * 14.5 # adding 10% of the amount of paint
+thinner_cost = thinner * 5
+bag = 0.4
+
+total_material_cost = nylon_cost + paint_cost + thinner_cost + bag
+
+# calculate the cost of craftsmen's work
+work_cost = 0.3 * total_material_cost * hours
+
+# calculate the total cost
+total_cost = total_material_cost + work_cost
+
+# print the result
+print("{:.2f}".format(total_cost))
