@@ -1,0 +1,22 @@
+# Read input from user
+num_chicken = int(input("Enter number of chicken menus: "))
+num_fish = int(input("Enter number of fish menus: "))
+num_vegetarian = int(input("Enter number of vegetarian menus: "))
+
+# Calculate order total
+chicken_price = 10.35
+fish_price = 12.40
+vegetarian_price = 8.15
+
+total = (num_chicken * chicken_price) + (num_fish * fish_price) + (num_vegetarian * vegetarian_price)
+
+# Add dessert cost
+dessert_cost = total * 0.2
+total += dessert_cost
+
+# Add delivery fee
+delivery_fee = 2.50
+total += delivery_fee
+
+# Output the result
+print("Order price: {:.2f} BGN".format(total))
