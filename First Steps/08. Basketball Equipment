@@ -1,0 +1,9 @@
+annual_fee = int(input())
+basketball_shoes = annual_fee - (0.4 * annual_fee)
+basketball_team = basketball_shoes - (0.2 * basketball_shoes)
+basketball = basketball_team * 0.25
+basketball_accessories = basketball * 0.2
+
+total_cost = annual_fee + basketball_shoes + basketball_team + basketball + basketball_accessories
+
+print(total_cost)
